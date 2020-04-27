@@ -29,10 +29,12 @@ const display = document.querySelector('div.display')
 buttons.forEach((div) => {
     div.addEventListener('click', (e) => {
         // Number pressed        
+        
+
         if (numbersTest.test(div.id) || div.id == '.') {
             if (displayValue == undefined) {displayValue = ''; result = undefined} // No values attached
             else if (operator !== undefined && num1 == undefined) {num1 = displayValue; displayValue = ''} // asign first value
-            if (operator == "div" && (div.id == '0' || div.id == '00')) {document.getElementById('infinity').play(); resetValues(); return alert('INFINITY')} // if user want to divide with 0
+            
             if (div.id == '.' && display.textContent.includes('.')) {return} // dont let to enter more than 1 point
             displayValue += div.id;
             display.textContent = displayValue;
@@ -69,6 +71,7 @@ buttons.forEach((div) => {
             
         }
         
+        if (display.textContent == 'Infinity') {document.getElementById('infinity').play(); resetValues(); return alert('INFINITY')} // if user want to divide with 0
     })
 })
 // add keyboard support
@@ -77,5 +80,4 @@ window.addEventListener('keydown', (e) => {
     if (!key) return;
     key.click();
   })
-
   console.log('%cTomas Gonzalez Moron \nabril 2020 \nhttps://github.com/tomigm', 'background: plum; font-size: medium')
