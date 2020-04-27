@@ -1,0 +1,118 @@
+
+*          { margin:auto; box-sizing: border-box; }
+
+.container {
+    padding-top: 120px;
+    margin: auto;
+    width: 200px;
+    overflow: hidden;
+    
+}
+    
+
+.title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    color: rgb(209, 209, 209);
+    -webkit-box-shadow: 0 6px 15px -9px rgb(77, 77, 77);
+	-moz-box-shadow: 0 6px 15px -9px rgb(77, 77, 77);
+	box-shadow: 0 6px 15px -9px rgb(77, 77, 77);
+    
+}
+   
+   
+
+.display {
+    display: flex;
+    padding: 0px;
+    line-height:60px;
+    margin-bottom: 0px;
+    background-color: rgb(242, 245, 201);
+    color: rgb(77, 77, 77);
+    text-align: right;
+    justify-content: flex-end;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 5px 10px;
+    
+}
+.row {
+    display: flex;
+}
+.row3 {
+    display: flex;
+}
+.b3 {
+    display: flex;
+    /*flex-grow: 3;*/
+    flex-basis: calc(75% );
+}
+
+
+.button  {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    flex-basis: 33.33%;
+    background: rgb(216, 214, 214);
+    border: 0.01mm solid rgb(233, 232, 232);
+    margin: 0px;
+    padding: 5px 5px;
+    color: rgb(90, 90, 90);
+    text-align: center;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    
+    /*position: relative;*/
+}
+
+
+#equal {
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 30px;
+}
+#equal:hover  {
+    background-color: rgb(212, 197, 55);
+    color: rgb(43, 43, 43);
+}
+
+.button:hover {
+    background: rgb(184, 182, 182);
+}
+
+#AC, #DEL {
+    background-color: rgb(172, 172, 172);
+    color: white;
+    cursor: pointer;
+}
+#AC:hover, #DEL:hover {
+    background-color: rgb(240, 148, 148);
+    color: rgb(43, 43, 43);
+
+}
+
+#add, #sub, #div, #mul {
+    background-color: rgb(172, 172, 172);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#add:hover, #sub:hover, #div:hover, #mul:hover {
+    background-color: rgb(226, 217, 130);
+    color: rgb(43, 43, 43);
+
+}
